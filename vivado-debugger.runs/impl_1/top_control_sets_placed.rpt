@@ -1,0 +1,114 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Dec  5 16:10:01 2021
+| Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    36 |
+|    Minimum number of control sets                        |    36 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    36 |
+| >= 0 to < 4        |     9 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |    17 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |              54 |           30 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            2 |
+| Yes          | No                    | Yes                    |             233 |          109 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |                  Enable Signal                 |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[6]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[2]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[7]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[1]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[4]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[0]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[5]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[3]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+|  pll/inst/o_clk_5mhz |                                                |                                        |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG |                                                | debuggerTop/debugger/AR[0]             |                2 |              4 |         2.00 |
+|  pll/inst/o_clk_5mhz | debuggerTop/spi/i_reset_n                      |                                        |                2 |              4 |         2.00 |
+|  i_spi_clk_IBUF_BUFG |                                                | debuggerTop/debugger/AR[0]             |                4 |              6 |         1.50 |
+|  i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_tx_byte_buffered             | debuggerTop/debugger/AR[0]             |                3 |              7 |         2.33 |
+|  pll/inst/o_clk_5mhz |                                                | debuggerTop/debugger/AR[0]             |                6 |              7 |         1.17 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_cmd[7]_i_1_n_2          | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_mem_address[15]_i_1_n_2 | debuggerTop/debugger/AR[0]             |                4 |              8 |         2.00 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_mem_address[7]_i_1_n_2  | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_mem_data                | debuggerTop/debugger/AR[0]             |                2 |              8 |         4.00 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_tx_byte[7]_i_1_n_2      | debuggerTop/debugger/AR[0]             |                2 |              8 |         4.00 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_id[15]_i_1_n_2    | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_id[7]_i_1_n_2     | debuggerTop/debugger/AR[0]             |                4 |              8 |         2.00 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_data[7]_i_1_n_2   | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_data[15]_i_1_n_2  | debuggerTop/debugger/AR[0]             |                4 |              8 |         2.00 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/E[0]                      | debuggerTop/mcu/i_reset_n              |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/E[0]                   | debuggerTop/values/r_cpu_reset_n_reg_0 |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/cpu6502/ir/E[0]                    | debuggerTop/values/r_cpu_reset_n_reg_0 |                3 |              8 |         2.67 |
+| ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_cpu_clk_en_reg_0[0]  | debuggerTop/values/r_cpu_reset_n_reg_0 |                2 |              8 |         4.00 |
+| ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_cpu_clk_en_reg_2[0]  | debuggerTop/values/r_cpu_reset_n_reg_0 |                6 |              8 |         1.33 |
+| ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_cpu_clk_en_reg_3[0]  | debuggerTop/values/r_cpu_reset_n_reg_0 |                4 |              8 |         2.00 |
+| ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_tcu_reg[0]_6[0]      | debuggerTop/values/r_cpu_reset_n_reg_0 |                4 |              8 |         2.00 |
+| ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/ir/r_tcu_reg[3]_1[0]       | debuggerTop/values/r_cpu_reset_n_reg_0 |                4 |              8 |         2.00 |
+| ~pll/inst/o_clk_5mhz |                                                | debuggerTop/values/r_cpu_reset_n_reg_0 |                6 |             11 |         1.83 |
+|  pll/inst/o_clk_5mhz | debuggerTop/r_cpu_clk_en                       | debuggerTop/values/r_cpu_reset_n_reg_0 |               14 |             19 |         1.36 |
+|  pll/inst/o_clk_5mhz |                                                | debuggerTop/mcu/i_reset_n              |               12 |             26 |         2.17 |
+| ~pll/inst/o_clk_5mhz | debuggerTop/r_cpu_clk_en                       | debuggerTop/values/r_cpu_reset_n_reg_0 |               18 |             31 |         1.72 |
+|  pll/inst/o_clk_5mhz | debuggerTop/spi/w_rx_dv                        | debuggerTop/debugger/AR[0]             |                9 |             32 |         3.56 |
++----------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,534 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Dec  5 16:04:28 2021
+# Process ID: 6208
+# Current directory: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1/top.vds
+# Journal file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11476
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1012.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1/.Xil/Vivado-6208-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1/.Xil/Vivado-6208-DESKTOP-H1KDTUU/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DebuggerTop' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:5]
+	Parameter RW_WRITE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SPIPeripheral' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/spi/SPIPeripheral.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'SPIPeripheral' (2#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/spi/SPIPeripheral.v:17]
+INFO: [Synth 8-6157] synthesizing module 'Debugger' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Debugger.v:7]
+	Parameter RW_READ bound to: 1 - type: integer 
+	Parameter RW_WRITE bound to: 0 - type: integer 
+	Parameter CMD_NOP bound to: 8'b00000000 
+	Parameter CMD_ECHO bound to: 8'b00000001 
+	Parameter CMD_MEM_WRITE bound to: 8'b00000010 
+	Parameter CMD_MEM_READ bound to: 8'b00000011 
+	Parameter CMD_VALUE_WRITE bound to: 8'b00000100 
+	Parameter CMD_VALUE_READ bound to: 8'b00000101 
+INFO: [Synth 8-6155] done synthesizing module 'Debugger' (3#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Debugger.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Sync' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Sync.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'Sync' (4#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Sync.v:7]
+INFO: [Synth 8-6157] synthesizing module 'Cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Cpu6502.v:1]
+INFO: [Synth 8-6157] synthesizing module 'TCU' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/TCU.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'TCU' (5#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/TCU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/IR.v:4]
+	Parameter OPCODE_BRK bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'IR' (6#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/IR.v:4]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Decoder.v:5]
+	Parameter C bound to: 0 - type: integer 
+	Parameter Z bound to: 1 - type: integer 
+	Parameter I bound to: 2 - type: integer 
+	Parameter N bound to: 7 - type: integer 
+	Parameter V bound to: 6 - type: integer 
+	Parameter BRK bound to: 8'b00000000 
+	Parameter NOP bound to: 8'b11101010 
+	Parameter INX bound to: 8'b11101000 
+	Parameter INY bound to: 8'b11001000 
+	Parameter DEX bound to: 8'b11001010 
+	Parameter DEY bound to: 8'b10001000 
+	Parameter LDA_i bound to: 8'b10101001 
+	Parameter LDA_a bound to: 8'b10101101 
+	Parameter LDX_i bound to: 8'b10100010 
+	Parameter LDX_a bound to: 8'b10101110 
+	Parameter LDY_i bound to: 8'b10100000 
+	Parameter LDY_a bound to: 8'b10101100 
+	Parameter STA_a bound to: 8'b10001101 
+	Parameter BIT_a bound to: 8'b00101100 
+	Parameter TAX bound to: 8'b10101010 
+	Parameter TAY bound to: 8'b10101000 
+	Parameter TSX bound to: 8'b10111010 
+	Parameter TXA bound to: 8'b10001010 
+	Parameter TXS bound to: 8'b10011010 
+	Parameter TYA bound to: 8'b10011000 
+	Parameter LSR_A bound to: 8'b01001010 
+	Parameter ASL_A bound to: 8'b00001010 
+	Parameter CLC bound to: 8'b00011000 
+	Parameter SEC bound to: 8'b00111000 
+	Parameter SED bound to: 8'b11111000 
+	Parameter CLD bound to: 8'b11011000 
+	Parameter SEI bound to: 8'b01111000 
+	Parameter CLI bound to: 8'b01011000 
+	Parameter CLV bound to: 8'b10111000 
+	Parameter ROL_A bound to: 8'b00101010 
+	Parameter ROR_A bound to: 8'b01101010 
+	Parameter PHA bound to: 8'b01001000 
+	Parameter PHP bound to: 8'b00001000 
+	Parameter PLA bound to: 8'b01101000 
+	Parameter PLP bound to: 8'b00101000 
+	Parameter AND_i bound to: 8'b00101001 
+	Parameter EOR_i bound to: 8'b01001001 
+	Parameter ORA_i bound to: 8'b00001001 
+	Parameter ADC_i bound to: 8'b01101001 
+	Parameter SBC_i bound to: 8'b11101001 
+	Parameter CMP_i bound to: 8'b11001001 
+	Parameter CPX_i bound to: 8'b11100000 
+	Parameter CPY_i bound to: 8'b11000000 
+	Parameter BCC bound to: 8'b10010000 
+	Parameter BCS bound to: 8'b10110000 
+	Parameter BEQ bound to: 8'b11110000 
+	Parameter BNE bound to: 8'b11010000 
+	Parameter BMI bound to: 8'b00110000 
+	Parameter BPL bound to: 8'b00010000 
+	Parameter BVC bound to: 8'b01010000 
+	Parameter BVS bound to: 8'b01110000 
+	Parameter JMP_a bound to: 8'b01001100 
+	Parameter STX_a bound to: 8'b10001110 
+	Parameter STY_a bound to: 8'b10001100 
+	Parameter JSR_a bound to: 8'b00100000 
+	Parameter RTS bound to: 8'b01100000 
+	Parameter INC_a bound to: 8'b11101110 
+	Parameter DEC_a bound to: 8'b11001110 
+	Parameter RTI bound to: 8'b01000000 
+	Parameter JMP_indirect bound to: 8'b01101100 
+	Parameter CMP_a bound to: 8'b11001101 
+	Parameter CPX_a bound to: 8'b11101100 
+	Parameter CPY_a bound to: 8'b11001100 
+	Parameter ADC_a bound to: 8'b01101101 
+	Parameter SBC_a bound to: 8'b11101101 
+	Parameter AND_a bound to: 8'b00101101 
+	Parameter EOR_a bound to: 8'b01001101 
+	Parameter ORA_a bound to: 8'b00001101 
+	Parameter ASL_a bound to: 8'b00001110 
+	Parameter LSR_a bound to: 8'b01001110 
+	Parameter ROL_a bound to: 8'b00101110 
+	Parameter ROR_a bound to: 8'b01101110 
+	Parameter LDA_ax bound to: 8'b10111101 
+	Parameter LDA_ay bound to: 8'b10111001 
+	Parameter CMP_ax bound to: 8'b11011101 
+	Parameter CMP_ay bound to: 8'b11011001 
+	Parameter LDX_ay bound to: 8'b10111110 
+	Parameter LDY_ax bound to: 8'b10111100 
+	Parameter AND_ax bound to: 8'b00111101 
+	Parameter AND_ay bound to: 8'b00111001 
+	Parameter ORA_ax bound to: 8'b00011101 
+	Parameter ORA_ay bound to: 8'b00011001 
+	Parameter EOR_ax bound to: 8'b01011101 
+	Parameter EOR_ay bound to: 8'b01011001 
+	Parameter STA_ax bound to: 8'b10011101 
+	Parameter STA_ay bound to: 8'b10011001 
+	Parameter STA_zp bound to: 8'b10000101 
+	Parameter STX_zp bound to: 8'b10000110 
+	Parameter STY_zp bound to: 8'b10000100 
+	Parameter STA_zp_ind_y bound to: 8'b10010001 
+	Parameter LDA_zp_ind_y bound to: 8'b10110001 
+	Parameter ORA_zp bound to: 8'b00000101 
+	Parameter SBC_ax bound to: 8'b11111101 
+	Parameter SBC_ay bound to: 8'b11111001 
+	Parameter INC_zp bound to: 8'b11100110 
+	Parameter DEC_zp bound to: 8'b11000110 
+	Parameter EOR_zp bound to: 8'b01000101 
+	Parameter AND_zp bound to: 8'b00100101 
+	Parameter ROR_ax bound to: 8'b01111110 
+	Parameter ROL_ax bound to: 8'b00111110 
+	Parameter LDA_zp bound to: 8'b10100101 
+	Parameter LDX_zp bound to: 8'b10100110 
+	Parameter LDY_zp bound to: 8'b10100100 
+	Parameter ADC_zp bound to: 8'b01100101 
+	Parameter ADC_ax bound to: 8'b01111101 
+	Parameter ADC_ay bound to: 8'b01111001 
+	Parameter BIT_zp bound to: 8'b00100100 
+	Parameter ROL_zp bound to: 8'b00100110 
+	Parameter ROR_zp bound to: 8'b01100110 
+	Parameter LSR_zp bound to: 8'b01000110 
+	Parameter ASL_zp bound to: 8'b00000110 
+	Parameter ASL_ax bound to: 8'b00011110 
+	Parameter LSR_ax bound to: 8'b01011110 
+	Parameter DEC_ax bound to: 8'b11011110 
+	Parameter INC_ax bound to: 8'b11111110 
+	Parameter CMP_zp bound to: 8'b11000101 
+	Parameter CPX_zp bound to: 8'b11100100 
+	Parameter CPY_zp bound to: 8'b11000100 
+	Parameter LDY_zp_x bound to: 8'b10110100 
+	Parameter LDA_zp_x bound to: 8'b10110101 
+	Parameter LDX_zp_y bound to: 8'b10110110 
+	Parameter STY_zp_x bound to: 8'b10010100 
+	Parameter STA_zp_x bound to: 8'b10010101 
+	Parameter STX_zp_y bound to: 8'b10010110 
+	Parameter ORA_zp_x bound to: 8'b00010101 
+	Parameter AND_zp_x bound to: 8'b00110101 
+	Parameter EOR_zp_x bound to: 8'b01010101 
+	Parameter ADC_zp_x bound to: 8'b01110101 
+	Parameter CMP_zp_x bound to: 8'b11010101 
+	Parameter SBC_zp_x bound to: 8'b11110101 
+	Parameter DEC_zp_x bound to: 8'b11010110 
+	Parameter INC_zp_x bound to: 8'b11110110 
+	Parameter SBC_zp bound to: 8'b11100101 
+	Parameter ASL_zp_x bound to: 8'b00010110 
+	Parameter ROL_zp_x bound to: 8'b00110110 
+	Parameter LSR_zp_x bound to: 8'b01010110 
+	Parameter ROR_zp_x bound to: 8'b01110110 
+	Parameter ADC_zp_ind_y bound to: 8'b01110001 
+	Parameter CMP_zp_ind_y bound to: 8'b11010001 
+	Parameter SBC_zp_ind_y bound to: 8'b11110001 
+	Parameter ORA_zp_ind_y bound to: 8'b00010001 
+	Parameter AND_zp_ind_y bound to: 8'b00110001 
+	Parameter EOR_zp_ind_y bound to: 8'b01010001 
+	Parameter ORA_zp_ind_x bound to: 8'b00000001 
+	Parameter AND_zp_ind_x bound to: 8'b00100001 
+	Parameter EOR_zp_ind_x bound to: 8'b01000001 
+	Parameter ADC_zp_ind_x bound to: 8'b01100001 
+	Parameter SBC_zp_ind_x bound to: 8'b11100001 
+	Parameter CMP_zp_ind_x bound to: 8'b11000001 
+	Parameter LDA_zp_ind_x bound to: 8'b10100001 
+	Parameter STA_zp_ind_x bound to: 8'b10000001 
+	Parameter RW_READ bound to: 1 - type: integer 
+	Parameter RW_WRITE bound to: 0 - type: integer 
+	Parameter HW_INTERRUPT_NONE bound to: 0 - type: integer 
+	Parameter HW_INTERRUPT_NMI bound to: 1 - type: integer 
+	Parameter HW_INTERRUPT_RESET bound to: 2 - type: integer 
+	Parameter HW_INTERRUPT_IRQ bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (7#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Decoder.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DL' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/DL.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'DL' (8#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/DL.v:7]
+INFO: [Synth 8-6157] synthesizing module 'DOR' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/DOR.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'DOR' (9#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/DOR.v:7]
+INFO: [Synth 8-6157] synthesizing module 'PCL' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/PCL.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'PCL' (10#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/PCL.v:10]
+INFO: [Synth 8-6157] synthesizing module 'PCH' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/PCH.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'PCH' (11#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/PCH.v:10]
+INFO: [Synth 8-6157] synthesizing module 'Register' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Register.v:12]
+	Parameter DEFAULT_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module 'Register' (12#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Register.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/ALU.v:16]
+INFO: [Synth 8-6157] synthesizing module 'ALUFullAdder' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/ALUFullAdder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALUFullAdder' (13#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/ALUFullAdder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (14#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/ALU.v:16]
+INFO: [Synth 8-6157] synthesizing module 'ProcessorStatus' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/ProcessorStatus.v:5]
+	Parameter C bound to: 0 - type: integer 
+	Parameter Z bound to: 1 - type: integer 
+	Parameter I bound to: 2 - type: integer 
+	Parameter D bound to: 3 - type: integer 
+	Parameter B bound to: 4 - type: integer 
+	Parameter V bound to: 6 - type: integer 
+	Parameter N bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ProcessorStatus' (15#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/ProcessorStatus.v:5]
+INFO: [Synth 8-6157] synthesizing module 'AddressBusRegister' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/AddressBusRegister.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'AddressBusRegister' (16#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/AddressBusRegister.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Routing' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Routing.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Routing' (17#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Routing.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Cpu6502' (18#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/cpu6502/Cpu6502.v:1]
+WARNING: [Synth 8-7071] port 'o_debug_bus_db' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_bus_adl' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_bus_adh' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_bus_sb' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_tcu' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_pcl' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_pch' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_add' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_dl' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7071] port 'o_debug_error' of module 'Cpu6502' is unconnected for instance 'cpu6502' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+WARNING: [Synth 8-7023] instance 'cpu6502' of module 'Cpu6502' has 26 connections declared, but only 16 given [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:183]
+INFO: [Synth 8-6157] synthesizing module 'Values' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Values.v:7]
+	Parameter VALUEID_CPU_STEP bound to: 1 - type: integer 
+	Parameter VALUEID_CPU_RESET_N bound to: 14 - type: integer 
+	Parameter VALUEID_CPU_ADDRESS bound to: 2 - type: integer 
+	Parameter VALUEID_CPU_DATA bound to: 3 - type: integer 
+	Parameter VALUEID_CPU_RW bound to: 4 - type: integer 
+	Parameter VALUEID_CPU_IRQ_N bound to: 5 - type: integer 
+	Parameter VALUEID_CPU_NMI_N bound to: 6 - type: integer 
+	Parameter VALUEID_CPU_SYNC bound to: 7 - type: integer 
+	Parameter VALUEID_CPU_REG_A bound to: 8 - type: integer 
+	Parameter VALUEID_CPU_REG_X bound to: 9 - type: integer 
+	Parameter VALUEID_CPU_REG_Y bound to: 10 - type: integer 
+	Parameter VALUEID_CPU_REG_S bound to: 11 - type: integer 
+	Parameter VALUEID_CPU_REG_P bound to: 12 - type: integer 
+	Parameter VALUEID_CPU_REG_IR bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Values' (19#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Values.v:7]
+INFO: [Synth 8-6157] synthesizing module 'DebuggerMCU' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerMCU.v:1]
+	Parameter RW_WRITE bound to: 0 - type: integer 
+	Parameter RW_READ bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DebuggerMCU' (20#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerMCU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Memory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1/.Xil/Vivado-6208-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (21#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1/.Xil/Vivado-6208-DESKTOP-H1KDTUU/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (22#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/Memory.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'DebuggerTop' (23#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/imports/debugger/DebuggerTop.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top' (24#1) [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1012.754 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1012.754 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'debuggerTop/memory/blockRam'
+Finished Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'debuggerTop/memory/blockRam'
+Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll'
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+WARNING: [Vivado 12-584] No ports matched ''. [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:4]
+Finished Parsing XDC File [c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'pll'
+Parsing XDC File [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/constrs_1/imports/digilent-xdc/Arty-A7-100-Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'i_spi_clk_IBUF'. [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/constrs_1/imports/digilent-xdc/Arty-A7-100-Master.xdc:171]
+Finished Parsing XDC File [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/constrs_1/imports/digilent-xdc/Arty-A7-100-Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/constrs_1/imports/digilent-xdc/Arty-A7-100-Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/constrs_1/imports/digilent-xdc/Arty-A7-100-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1055.957 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1055.957 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1055.957 ; gain = 43.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1055.957 ; gain = 43.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk_100mhz. (constraint file  c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk_100mhz. (constraint file  c:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for debuggerTop/memory/blockRam. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for pll. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1055.957 ; gain = 43.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1055.957 ; gain = 43.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   16 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 20    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 46    
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 44    
+	   4 Input   16 Bit        Muxes := 10    
+	   6 Input   16 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 32    
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 8     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 4     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	  12 Input    2 Bit        Muxes := 1     
+	  20 Input    2 Bit        Muxes := 1     
+	  19 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 2     
+	  15 Input    2 Bit        Muxes := 1     
+	  16 Input    2 Bit        Muxes := 5     
+	  18 Input    2 Bit        Muxes := 3     
+	   7 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 193   
+	   4 Input    1 Bit        Muxes := 27    
+	   6 Input    1 Bit        Muxes := 8     
+	   7 Input    1 Bit        Muxes := 40    
+	   3 Input    1 Bit        Muxes := 41    
+	  20 Input    1 Bit        Muxes := 1     
+	  19 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 34    
+	  18 Input    1 Bit        Muxes := 33    
+	  12 Input    1 Bit        Muxes := 22    
+	  16 Input    1 Bit        Muxes := 21    
+	  14 Input    1 Bit        Muxes := 22    
+	  11 Input    1 Bit        Muxes := 21    
+	   8 Input    1 Bit        Muxes := 22    
+	  22 Input    1 Bit        Muxes := 1     
+	  17 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1153.730 ; gain = 140.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1153.730 ; gain = 140.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1329.953 ; gain = 317.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1331.027 ; gain = 318.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |blk_mem_gen |     1|
+|2     |clk_wiz     |     1|
+|3     |BUFG        |     1|
+|4     |CARRY4      |    16|
+|5     |LUT1        |    23|
+|6     |LUT2        |   122|
+|7     |LUT3        |   188|
+|8     |LUT4        |   159|
+|9     |LUT5        |   143|
+|10    |LUT6        |   739|
+|11    |MUXF7       |     7|
+|12    |FDCE        |   269|
+|13    |FDPE        |    18|
+|14    |FDRE        |     5|
+|15    |IBUF        |     4|
+|16    |OBUF        |     1|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 1331.789 ; gain = 275.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1331.789 ; gain = 319.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1331.789 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1331.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 1331.789 ; gain = 319.035
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  5 16:05:37 2021...
