@@ -2,11 +2,11 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sun Dec  5 16:09:27 2021
-# Process ID: 1604
-# Current directory: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/impl_1
+# Start of session at: Sat Jan  1 18:03:29 2022
+# Process ID: 3020
+# Current directory: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-cpu6502-debugger/vivado-debugger.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
-# Log file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/impl_1/top.vdi
-# Journal file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-debugger/vivado-debugger.runs/impl_1\vivado.jou
+# Log file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-cpu6502-debugger/vivado-debugger.runs/impl_1/top.vdi
+# Journal file: C:/Users/jim/Documents/GitHub/personal/vivado/vivado-cpu6502-debugger/vivado-debugger.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace

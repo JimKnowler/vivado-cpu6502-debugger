@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sun Dec  5 16:10:01 2021
+| Date         : Sat Jan  1 18:04:03 2022
 | Host         : DESKTOP-H1KDTUU running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -73,37 +73,37 @@ Table of Contents
 +----------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
 |     Clock Signal     |                  Enable Signal                 |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------+------------------------------------------------+----------------------------------------+------------------+----------------+--------------+
-| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[6]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
-| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[2]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
-| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[7]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
-| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[1]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
 | ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[4]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
-| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[0]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
 | ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[5]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[6]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[1]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[2]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
 | ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[3]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[0]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
+| ~i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_rx_byte[7]_i_1_n_2           | debuggerTop/debugger/AR[0]             |                1 |              1 |         1.00 |
 |  pll/inst/o_clk_5mhz |                                                |                                        |                1 |              1 |         1.00 |
 | ~i_spi_clk_IBUF_BUFG |                                                | debuggerTop/debugger/AR[0]             |                2 |              4 |         2.00 |
 |  pll/inst/o_clk_5mhz | debuggerTop/spi/i_reset_n                      |                                        |                2 |              4 |         2.00 |
 |  i_spi_clk_IBUF_BUFG |                                                | debuggerTop/debugger/AR[0]             |                4 |              6 |         1.50 |
 |  i_spi_clk_IBUF_BUFG | debuggerTop/spi/r_tx_byte_buffered             | debuggerTop/debugger/AR[0]             |                3 |              7 |         2.33 |
 |  pll/inst/o_clk_5mhz |                                                | debuggerTop/debugger/AR[0]             |                6 |              7 |         1.17 |
+|  pll/inst/o_clk_5mhz | debuggerTop/cpu6502/ir/E[0]                    | debuggerTop/values/r_cpu_reset_n_reg_0 |                3 |              8 |         2.67 |
 |  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_cmd[7]_i_1_n_2          | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_tx_byte[7]_i_1_n_2      | debuggerTop/debugger/AR[0]             |                2 |              8 |         4.00 |
 |  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_mem_address[15]_i_1_n_2 | debuggerTop/debugger/AR[0]             |                4 |              8 |         2.00 |
 |  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_mem_address[7]_i_1_n_2  | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
 |  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_mem_data                | debuggerTop/debugger/AR[0]             |                2 |              8 |         4.00 |
-|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_tx_byte[7]_i_1_n_2      | debuggerTop/debugger/AR[0]             |                2 |              8 |         4.00 |
-|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_id[15]_i_1_n_2    | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
-|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_id[7]_i_1_n_2     | debuggerTop/debugger/AR[0]             |                4 |              8 |         2.00 |
 |  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_data[7]_i_1_n_2   | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
 |  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_data[15]_i_1_n_2  | debuggerTop/debugger/AR[0]             |                4 |              8 |         2.00 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_id[7]_i_1_n_2     | debuggerTop/debugger/AR[0]             |                4 |              8 |         2.00 |
 |  pll/inst/o_clk_5mhz | debuggerTop/debugger/E[0]                      | debuggerTop/mcu/i_reset_n              |                3 |              8 |         2.67 |
+|  pll/inst/o_clk_5mhz | debuggerTop/debugger/r_value_id[15]_i_1_n_2    | debuggerTop/debugger/AR[0]             |                3 |              8 |         2.67 |
 |  pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/E[0]                   | debuggerTop/values/r_cpu_reset_n_reg_0 |                3 |              8 |         2.67 |
-|  pll/inst/o_clk_5mhz | debuggerTop/cpu6502/ir/E[0]                    | debuggerTop/values/r_cpu_reset_n_reg_0 |                3 |              8 |         2.67 |
+| ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/ir/r_tcu_reg[3]_1[0]       | debuggerTop/values/r_cpu_reset_n_reg_0 |                4 |              8 |         2.00 |
 | ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_cpu_clk_en_reg_0[0]  | debuggerTop/values/r_cpu_reset_n_reg_0 |                2 |              8 |         4.00 |
 | ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_cpu_clk_en_reg_2[0]  | debuggerTop/values/r_cpu_reset_n_reg_0 |                6 |              8 |         1.33 |
 | ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_cpu_clk_en_reg_3[0]  | debuggerTop/values/r_cpu_reset_n_reg_0 |                4 |              8 |         2.00 |
 | ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/tcu/r_tcu_reg[0]_6[0]      | debuggerTop/values/r_cpu_reset_n_reg_0 |                4 |              8 |         2.00 |
-| ~pll/inst/o_clk_5mhz | debuggerTop/cpu6502/ir/r_tcu_reg[3]_1[0]       | debuggerTop/values/r_cpu_reset_n_reg_0 |                4 |              8 |         2.00 |
 | ~pll/inst/o_clk_5mhz |                                                | debuggerTop/values/r_cpu_reset_n_reg_0 |                6 |             11 |         1.83 |
 |  pll/inst/o_clk_5mhz | debuggerTop/r_cpu_clk_en                       | debuggerTop/values/r_cpu_reset_n_reg_0 |               14 |             19 |         1.36 |
 |  pll/inst/o_clk_5mhz |                                                | debuggerTop/mcu/i_reset_n              |               12 |             26 |         2.17 |
