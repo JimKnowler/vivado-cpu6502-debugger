@@ -3,6 +3,8 @@ Vivado Project for CPU6502 Debugger
 
 Vivado project for a Verilog reproduction of the 6502 CPU and some block ram.
 
+![Arduino and FPGA](./docs/arduino_and_fpga.jpg)
+
 The CPU is wrapped in a debugger framework that can be used to:
 - read / write memory
 - read state of the CPU
@@ -40,3 +42,4 @@ Arduino DUE Pinout
 - SPI (clk, mosi, miso, gnd)
 - Pin 8 - SPI chip select 
 
+![Arduino Stepping through 6502 clock cycles](./docs/cpu6502_running_on_fpga.gif)

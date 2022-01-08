@@ -94,3 +94,10 @@
 # Arudino Sketches
 ###########
 !*.ino
+
+###########
+# Documentation
+###########
+!*.jpg
+!*.mp4
+!*.gif
